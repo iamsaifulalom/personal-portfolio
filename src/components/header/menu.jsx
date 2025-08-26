@@ -10,7 +10,7 @@ export default function HeaderDialog() {
     return (
         <>
             <SquareChartGantt onClick={() => { setIsOpen(p => !p) }} className='cursor-pointer' />
-            {isOpen && <Command />}
+            {isOpen && <Command isOpen={isOpen} setIsOpen={setIsOpen}/>}
         </>
     )
 }

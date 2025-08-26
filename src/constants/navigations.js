@@ -1,8 +1,8 @@
 import { BriefcaseBusiness, House, Phone, FileSpreadsheet } from "lucide-react"
 
 export const navigationLinks = [
-    { name: "Home", Icon: House, path: "/" },
-    { name: "Projects", Icon: BriefcaseBusiness, path: "/projects" },
-    { name: "Blog", Icon: FileSpreadsheet, path: "/blog" },
-    { name: "Contact me", Icon: Phone, path: "/contact" },
+    { name: "Home", Icon: House, url: "/" },
+    { name: "Projects", Icon: BriefcaseBusiness, url: "/projects" },
+    { name: "Blog", Icon: FileSpreadsheet, url: "/blog" },
+    { name: "Contact me", Icon: Phone, url: "/contact" },
 ]

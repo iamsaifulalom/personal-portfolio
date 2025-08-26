@@ -1,11 +1,4 @@
-import {
-  Calculator,
-  Calendar,
-  CreditCard,
-  Settings,
-  Smile,
-  User,
-} from "lucide-react"
+
 import {
   Command as UiCommand,
   CommandEmpty,
@@ -16,30 +9,42 @@ import {
   CommandSeparator,
 } from "@/components/ui/command"
 
+import { navigationLinks } from "@/constants/navigations"
+import Link from "next/link"
+import { socialLinks } from "@/constants/socialsLinks"
 
-export default function Command() {
+
+export default function Command({isOpen , setIsOpen}) {
 
   return (
-    <UiCommand className="rounded-lg border shadow-md max-w-3xl -translate-x-1/2 left-1/2 h-96  fixed top-20">
-      <CommandInput placeholder="Type a command or search..." />
+  <>
+    <UiCommand className="rounded-lg border shadow-md max-w-3xl -translate-x-1/2 left-1/2 h-96  fixed top-18">
+      <CommandInput placeholder="Search..." className="py-8" />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading="Navigations">
-          <CommandItem>
-            <Calendar />
-            <span>Calendar</span>
-          </CommandItem>
-          <CommandItem>
-            <Smile />
-            <span>Search Emoji</span>
-          </CommandItem>
-          <CommandItem disabled>
-            <Calculator />
-            <span>Calculator</span>
-          </CommandItem>
+          {navigationLinks.map(({ Icon, name, url }) => (
+            <Link onClick={()=> setIsOpen(false)} key={name} href={url} className="text-muted-foreground">
+              <CommandItem >
+                <Icon />
+                {name}
+              </CommandItem>
+            </Link>
+          ))}
         </CommandGroup>
-        <CommandSeparator />
+        <CommandSeparator/>
+        <CommandGroup heading="Socials">
+          {socialLinks.map(({ Icon, name, url }) => (
+            <Link onClick={()=> setIsOpen(false)} target="_blank" key={name} href={url} className="text-muted-foreground">
+              <CommandItem >
+                <Icon />
+                {name}
+              </CommandItem>
+            </Link>
+          ))}
+        </CommandGroup>
       </CommandList>
     </UiCommand>
+  </>
   )
 }

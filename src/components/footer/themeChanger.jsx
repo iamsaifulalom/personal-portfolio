@@ -22,15 +22,15 @@ export default function ThemeChanger() {
             className="border-2"
             onValueChange={(val) => val && setTheme(val)}
         >
-            <ToggleGroupItem value="light" aria-label="Toggle light">
+            <ToggleGroupItem value="light" className="cursor-pointer" aria-label="Toggle light">
                 <Sun className="h-4 w-4" />
             </ToggleGroupItem>
 
-            <ToggleGroupItem value="dark" aria-label="Toggle dark">
+            <ToggleGroupItem value="dark" className="cursor-pointer" aria-label="Toggle dark">
                 <Moon className="h-4 w-4" />
             </ToggleGroupItem>
 
-            <ToggleGroupItem value="system" aria-label="Toggle system">
+            <ToggleGroupItem value="system" className="cursor-pointer" aria-label="Toggle system">
                 <Laptop2 className="h-4 w-4" />
             </ToggleGroupItem>
         </ToggleGroup>
