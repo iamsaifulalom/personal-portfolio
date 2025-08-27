@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { Command as CommandPrimitive } from "cmdk"
-import { SearchIcon } from "lucide-react"
+import { SearchIcon, XIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import {
@@ -56,6 +56,7 @@ function CommandDialog({
 
 function CommandInput({
   className,
+  setIsOpen,
   ...props
 }) {
   return (
@@ -71,6 +72,8 @@ function CommandInput({
           className
         )}
         {...props} />
+      <XIcon onClick={() => setIsOpen(false)} className="size-6 cursor-pointer transition-all rounded-full hover:bg-muted-foreground p-0.5 shrink-0 opacity-50" />
+
     </div>
   );
 }

@@ -12,43 +12,51 @@ import {
 import { navigationLinks } from "@/constants/navigations"
 import Link from "next/link"
 import { socialLinks } from "@/constants/socialsLinks"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import gsap from 'gsap'
 
 export default function Command({ isOpen, setIsOpen }) {
 
-useEffect(() => {
-  if (isOpen) {
-    gsap.fromTo(
-      ".animate-gsap",
-      { scale: 0.8, opacity: 0, y: -30 },
-      { 
-        scale: 1, 
-        opacity: 1, 
-        y: 0, 
-        duration: 0.3, 
-        ease: "back.out(1.7)" // springy effect
-      }
-    )
-  } else {
-    gsap.to(".animate-gsap", {
-      scale: 0.8,
-      opacity: 0,
-      y: -30,
-      duration: 0.4,
-      ease: "power2.in"
-    })
-  }
-}, [isOpen])
+  useEffect(() => {
+    if (isOpen) {
+      gsap.fromTo(
+        ".animate-gsap",
+        { scale: 4, opacity: 0, y: -30 },
+        {
+          scale: 1,
+          opacity: 1,
+          y: 0,
+          duration: 0.3,
+          ease: "power4.inOut" // springy effect
+        }
+      )
+    } else {
+       gsap.fromTo(
+        ".animate-gsap",
+        { scale: 1, opacity: 0, y: -30 },
+        {
+          scale: 4,
+          opacity: 1,
+          y: 0,
+          duration: 0.3,
+          ease: "power4.inOut" // springy effect
+        }
+      )
+    }
+  }, [isOpen])
 
 
   return (
     <>
-      <div onClick={() => setIsOpen(false)}
-        className="fixed top-0 left-0 w-full h-screen z-5 bg-background/5 backdrop-blur-xs">
-      </div>
-      <UiCommand className="rounded-lg animate-gsap border shadow-md max-w-3xl z-10 -translate-x-1/2 left-1/2 h-96  fixed top-18">
-        <CommandInput placeholder="Search..." className="py-8" />
+      <div
+        onClick={() => setIsOpen(false)}
+        className={`fixed top-0 left-0 w-full h-screen z-5 bg-background/5 backdrop-blur-xs transition-opacity 
+       ${isOpen ? "block opacity-100" : "hidden opacity-0"}`}
+      ></div>
+      <UiCommand
+        className={`rounded-lg animate-gsap w-[300px] md:w-[650px] border shadow-md z-50 -translate-x-1/2 left-1/2 h-96 fixed top-3 
+        ${isOpen ? "block" : "hidden"}`}>
+        <CommandInput setIsOpen={setIsOpen} placeholder="Search..." className="py-8" />
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading="Navigations">

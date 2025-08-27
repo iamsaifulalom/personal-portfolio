@@ -7,10 +7,11 @@ import { useState } from "react";
 
 export default function HeaderDialog() {
     const [isOpen, setIsOpen] = useState(false)
+
     return (
         <>
             <SquareChartGantt onClick={() => { setIsOpen(p => !p) }} className='cursor-pointer' />
-            {isOpen && <Command isOpen={isOpen} setIsOpen={setIsOpen}/>}
+            <Command setIsOpen={setIsOpen} isOpen={isOpen}/>
         </>
     )
 }
