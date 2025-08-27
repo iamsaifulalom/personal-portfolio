@@ -32,11 +32,13 @@ function TooltipContent({
   className,
   sideOffset = 0,
   children,
+  side = "top",
   ...props
 }) {
   return (
     <TooltipPrimitive.Portal>
       <TooltipPrimitive.Content
+        side={side}
         data-slot="tooltip-content"
         sideOffset={sideOffset}
         className={cn(

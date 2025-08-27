@@ -1,5 +1,3 @@
-import { Github, Twitter, Youtube } from 'lucide-react'
-import { Button } from "@/components/ui/button"
 import {
     Tooltip,
     TooltipContent,
