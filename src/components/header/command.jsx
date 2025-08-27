@@ -1,4 +1,3 @@
-
 import {
   Command as UiCommand,
   CommandEmpty,
@@ -26,19 +25,7 @@ export default function Command({ isOpen, setIsOpen }) {
           scale: 1,
           opacity: 1,
           y: 0,
-          duration: 0.3,
-          ease: "power4.inOut" // springy effect
-        }
-      )
-    } else {
-       gsap.fromTo(
-        ".animate-gsap",
-        { scale: 1, opacity: 0, y: -30 },
-        {
-          scale: 4,
-          opacity: 1,
-          y: 0,
-          duration: 0.3,
+          duration: 0.5,
           ease: "power4.inOut" // springy effect
         }
       )
