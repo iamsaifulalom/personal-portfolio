@@ -11,19 +11,36 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { SparklesCore } from "../ui/sparkles";
 
 export default function Hero() {
   const textRef = useRef(null)
 
   // run the custom hook
   useAnimateText(textRef)
-// right-[-510px] bottom-[-759px] left-[-532px]
+  // right-[-510px] bottom-[-759px] left-[-532px]
 
   return (
-    <div className="max-w-7xl md:pt-10  overflow-hidden relative z-10 mx-auto px-4 w-full">
+    <div className="max-w-7xl md:pt-10  overflow-hidden relative mx-auto px-4 w-full">
+
+      <div className="w-full absolute inset-0 h-full">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+        />
+      </div>
+
+
+
+      <div className="absolute  bottom-[100px] left-1/2 h-[111px] w-[787px] -translate-x-1/2 transform overflow-hidden bg-[radial-gradient(50%_50%_at_50%_50%,#5506ba_0%,rgba(10,10,10,0)_100%)] blur-[57px]"></div>
+      <div className="bg-foreground-1  bg-background absolute left-1/2 -translate-x-1/2 top-[450px] lg:top-96 aspect-[2.346820809248555/1] h-[956px] rounded-[100%] shadow-[inset_0_2px_20px_#fff,0_-10px_50px_1px_#ffffff7d]"></div>
+     
       {/* headers */}
-      <div className="absolute bottom-[100px] left-1/2 h-[111px] w-[787px] -translate-x-1/2 transform overflow-hidden bg-[radial-gradient(50%_50%_at_50%_50%,#5506ba_0%,rgba(10,10,10,0)_100%)] blur-[57px]"></div>
-      <div className="bg-foreground-1 absolute left-1/2 -translate-x-1/2 top-[450px] lg:top-96 aspect-[2.346820809248555/1] h-[956px] rounded-[100%] shadow-[inset_0_2px_20px_#fff,0_-10px_50px_1px_#ffffff7d]"></div>
       <h1 >I build seamless digital experiences</h1>
       <h1>from <span >founders’</span> original ideas.</h1>
       <div className="flex pt-16 h-[300px] text-muted-foreground">

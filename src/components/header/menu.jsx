@@ -1,6 +1,6 @@
 "use client"
 
-import { SquareChartGantt } from "lucide-react";
+import { Menu } from "lucide-react";
 import Command from "./command";
 import { useState } from "react";
 
@@ -10,7 +10,7 @@ export default function HeaderDialog() {
 
     return (
         <>
-            <SquareChartGantt onClick={() => { setIsOpen(p => !p) }} className='cursor-pointer' />
+            <Menu onClick={() => { setIsOpen(p => !p) }} className='cursor-pointer' />
             <Command setIsOpen={setIsOpen} isOpen={isOpen}/>
         </>
     )
