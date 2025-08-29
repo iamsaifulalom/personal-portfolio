@@ -17,8 +17,6 @@
   font-style: normal;
 }
 
-
-
 @theme inline {
   --font-Montserrat: "Montserrat";
   --font-Inter: "Inter";
@@ -151,3 +149,4 @@ h1 {
 h1 span {
   @apply bg-foreground text-background px-2 rounded
 }
+
