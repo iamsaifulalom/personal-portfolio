@@ -1,5 +1,5 @@
 "use client"
-import { Sun, Moon } from 'lucide-react'
+import { Sun } from 'lucide-react'
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import Link from 'next/link';

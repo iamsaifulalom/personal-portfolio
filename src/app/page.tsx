@@ -1,11 +1,12 @@
+import About from '@/components/about/About'
 import Hero from '@/components/hero/hero'
-import { Button } from '@/components/ui/button'
 import React from 'react'
 
 export default function Home() {
   return (
-    <>
-      <Hero/>
-    </>
+    <div className='max-w-xl mx-auto'>
+      <Hero />
+      <About />
+    </div>
   )
 }

@@ -1,11 +1,11 @@
-import { Facebook, Youtube, Github, Twitter , SendHorizonal , Mail} from 'lucide-react'
+import { Facebook, Youtube, Github, Twitter , Send , Mail} from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 import { Button } from '../ui/button'
 
 export default function Hero() {
   return (
-    <div className='w-full max-w-xl mx-auto font-poppins mt-4 px-3.5'>
+    <div className='w-full font-poppins mt-4 px-3.5'>
       {/* profile pic , name and title */}
       <div className='flex gap-1 md:gap-6  py-4'>
         {/* frofile picture */}
@@ -16,7 +16,7 @@ export default function Hero() {
         </div>
         {/* name and title */}
         <div>
-          <h1 className='text-[28px] font-bold text-left'>Hi, I'm Saiful</h1>
+          <h1 className='text-[28px] font-bold text-left'>Hi, I&apos;m Saiful</h1>
           <p className='text-muted-foreground mt-0.5 text-[16px] leading-5'>Frontend & <br /> Backend Engineer</p>
           {/* social icons */}
 
@@ -47,7 +47,7 @@ export default function Hero() {
       {/* cta buttons */}
       <div className='flex gap-2 mt-3'>
         <Button className='rounded text-foreground w-[70%]'>
-          Send Email <SendHorizonal/>
+          Send Email <Send/>
         </Button>
 
         <div className='flex gap-2 flex-1 pr-3'>
