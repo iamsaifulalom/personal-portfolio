@@ -2,6 +2,8 @@ import { ReactNode } from 'react';
 import { Poppins } from 'next/font/google'
 import type { Metadata } from "next";
 import "./globals.css";
+import { ThemeProvider } from 'next-themes';
+import Header from '@/components/header/header';
 
 const roboto = Poppins({
   subsets: ['latin'],           // Load only Latin characters
@@ -12,7 +14,7 @@ const roboto = Poppins({
 export const metadata: Metadata = {
   title: "Saiful Alom",
   description: "Self-taught MERN developer from Bangladesh",
-  keywords: "Next.js, MERN, SEO, Developer, Bangladesh",
+  keywords: "Next.js, MERN, SEO, Developer, Saiful Alom, Best software engineer in Bangladesh, Software engineer in Bangladesh",
   authors: [{ name: "Saiful Alom" }],
   openGraph: {
     title: "Saiful Alom",
@@ -32,10 +34,14 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children, }: { children: ReactNode }) {
+
   return (
-    <html lang="en" className={roboto.variable}>
+    <html lang="en" className={roboto.variable} suppressHydrationWarning>
       <body>
-        {children}
+        <ThemeProvider defaultTheme='dark' attribute="class">
+          <Header />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
