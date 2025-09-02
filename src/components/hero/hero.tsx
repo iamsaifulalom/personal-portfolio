@@ -11,7 +11,7 @@ export default function Hero() {
         {/* frofile picture */}
         <div className='w-[115px] overflow-hidden'>
           <div className='rounded-full size-[110px] p-1 border-4 border-primary'>
-            <Image src="/images/pp.png" alt='Prfile picture' className='rounded-full' width={400} height={400} />
+            {/* <Image src="/images/pp.png" alt='Prfile picture' className='rounded-full' width={400} height={400} /> */}
           </div>
         </div>
         {/* name and title */}
