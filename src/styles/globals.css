@@ -39,6 +39,23 @@
 }
 
 @theme inline {
+  --text-6xl: 320px;
+  --text-5xl: 240px;
+  --text-4xl: 192px;
+  --text-3xl: 160px;
+  --text-2xl: 128px;
+  --text-xl: 96px;
+  --text-lg: 80px;
+  --text-base: 64px;
+  --text-sm: 48px;
+  --text-xs: 40px;
+  --text-xxs: 32px;
+  --text-mini: 30px;
+  --text-micro: 26px;
+  --text-tiny: 24px;
+  --font-Inter: "Inter", sans-serif;
+  --font-AntonSC: "AntonSC", sans-serif;
+  --font-Spectral: "Spectral", sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -129,7 +146,29 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: 'AntonSC';
+  src: url("/fonts/AntonSC.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/Inter.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Spectral';
+  src: url("/fonts/Spectral-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
 }
