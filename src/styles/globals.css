@@ -53,7 +53,7 @@
   --text-mini: 30px;
   --text-micro: 26px;
   --text-tiny: 24px;
-  --font-Inter: "Inter", sans-serif;
+  --font-Intern: "Intern", sans-serif;
   --font-AntonSC: "AntonSC", sans-serif;
   --font-Spectral: "Spectral", sans-serif;
   --color-background: var(--background);
@@ -160,8 +160,8 @@ body {
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url("/fonts/Inter.ttf") format("truetype");
+  font-family: 'Intern';
+  src: url("/fonts/Intern.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
