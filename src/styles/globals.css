@@ -172,3 +172,11 @@ body {
   font-weight: 400;
   font-style: italic;
 }
+
+.sections-label{
+  @apply font-Spectral  lg:text-mini text-tiny text-muted-foreground mb-5 lg:mb-[32px]
+}
+
+p{
+  @apply font-Intern text-muted-foreground
+}
