@@ -1,6 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 import AcmeIcon from '../../../public/icons/acme'
+import Kanba from '../../../public/icons/kanba'
+import Goldline from '../../../public/icons/goldline'
+import Asgardia from '../../../public/icons/asgardia'
+import Utosia from '../../../public/icons/utosia'
+import Circle from '../../../public/icons/circle'
 
 export default function Hero() {
     return (
@@ -34,11 +39,11 @@ export default function Hero() {
                     <h2 className='sections-label'>( My Clients )</h2>
                     <div className='grid grid-cols-3 gap-3'>
                         <AcmeIcon className='w-20 lg:w-28'/>
-                        <AcmeIcon className='w-20 lg:w-28'/>
-                        <AcmeIcon className='w-20 lg:w-28'/>
-                        <AcmeIcon className='w-20 lg:w-28' />
-                        <AcmeIcon className='w-20 lg:w-28' />
-                        <AcmeIcon className='w-20 lg:w-28' />
+                        <Kanba className='w-20 lg:w-28'/>
+                        <Goldline className='w-20 lg:w-28'/>
+                        <Asgardia className='w-20 lg:w-28' />
+                        <Utosia className='w-20 lg:w-28' />
+                        <Circle className='w-20 lg:w-28' />
                     </div>
                 </div>
             </div>
