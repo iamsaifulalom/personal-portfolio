@@ -39,6 +39,8 @@
 }
 
 @theme inline {
+  --font-Manrope: "Manrope";
+  --font-AnastasiaScript: "AnastasiaScript";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -132,4 +134,22 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope.woff2') format('woff2'),
+       url('/fonts/Manrope.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AnastasiaScript';
+  src: url('/fonts/AnastasiaScript.woff2') format('woff2'),
+       url('/fonts/AnastasiaScript.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
