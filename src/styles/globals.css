@@ -131,6 +131,7 @@ body {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-foreground text-background;
   }
@@ -139,7 +140,7 @@ body {
 @font-face {
   font-family: 'Manrope';
   src: url('/fonts/Manrope.woff2') format('woff2'),
-       url('/fonts/Manrope.woff') format('woff');
+    url('/fonts/Manrope.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -148,8 +149,12 @@ body {
 @font-face {
   font-family: 'AnastasiaScript';
   src: url('/fonts/AnastasiaScript.woff2') format('woff2'),
-       url('/fonts/AnastasiaScript.woff') format('woff');
+    url('/fonts/AnastasiaScript.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+h1 {
+  @apply text-6xl md:text-9xl
 }
