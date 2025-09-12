@@ -1,5 +1,11 @@
+import { Button } from "@/components/ui/button";
+
 export default function Index() {
   return (
-    <div>Index</div>
+    <div>
+      <Button>
+        Details
+      </Button>
+    </div>
   )
 }
