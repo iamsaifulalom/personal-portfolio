@@ -1,18 +1,18 @@
 export const aboutMe = [
   {
     label: "Personality",
-    description: "I am a self-taught, resilient, and visionary developer. I turn challenges into opportunities and strive to create technology solutions that uplift communities. I value creativity, continuous learning, and building a secure future through innovation."
+    description: "I’m a self-taught, resilient developer who turns challenges into opportunities. I value creativity, learning, and building solutions that uplift communities."
   },
   {
     label: "Designer",
-    description: "I craft clean, minimal, and functional designs that focus on user experience. My design approach combines simplicity with modern aesthetics, ensuring every project is visually appealing and easy to use."
+    description: "I design clean, minimal, and user-focused interfaces, blending simplicity with modern aesthetics for a smooth user experience."
   },
   {
     label: "What I Do",
-    description: "I build web applications using the MERN stack, focusing on scalable, secure, and performant solutions. I also work on SEO optimization, AI integration, and cybersecurity enhancements to make digital products smarter and safer."
+    description: "I build scalable MERN apps with focus on performance, security, SEO, AI, and cybersecurity to create smarter digital products."
   },
   {
     label: "Beyond Design",
-    description: "Beyond code and design, I aim to empower rural communities with technology education. I dream of launching online schools, computer labs, and platforms that teach digital skills, helping others break the cycle of poverty and achieve financial independence."
+    description: "I approach work with care, patience, and attention to detail, ensuring every step is thoughtful and impactful."
   }
 ];

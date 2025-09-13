@@ -3,10 +3,11 @@ import { Button } from '../ui/button'
 
 export default function Hero() {
     return (
-        <div className='flex flex-col justify-between w-full px-6 py-16 relative'>
+        <div className='flex flex-col font-Manrope justify-between w-full px-6 py-16 relative'>
             <div className='mt-16'>
                 <h1 className='font-AnastasiaScript'>Saiful Alom</h1>
-                <h1 className='font-Manrope ml-[260px]'>Sujon</h1>
+                <h1 className='font-Manrope ml-[260px] hidden md:block'>Sujon</h1>
+                <span >({new Date().getFullYear()})</span>
             </div>
             <div className='text-end  mt-16'>
                 <h1 className='font-Manrope'>Software</h1>
