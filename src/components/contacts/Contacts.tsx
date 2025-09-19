@@ -7,7 +7,7 @@ export default function Contacts() {
             <h1 className='font-AnastasiaScript'>Constacts</h1>
             <div className='grid grid-cols-1 gap-3 lg:grid-cols-4'>
                 {socials.map(({ Icon, label }) => (
-                    <div className='flex text-sm items-center lg:justify-center gap-3 lg:border-2 border-muted-foreground lg:p-2'>
+                    <div key={label} className='flex text-sm items-center lg:justify-center gap-3 lg:border-2 border-muted-foreground lg:p-2'>
                         <Icon size={16} /> <span className='text-muted-foreground'>{label}</span>
                     </div>
                 ))}
