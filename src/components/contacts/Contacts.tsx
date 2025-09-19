@@ -1,6 +1,5 @@
 import React from 'react'
 import { socials } from '../../../constants/socials';
-import { Quote, Superscript } from 'lucide-react'
 
 export default function Contacts() {
     return (
