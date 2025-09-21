@@ -158,3 +158,15 @@ body {
 h1 {
   @apply text-6xl md:text-9xl
 }
+
+h2 {
+  @apply text-4xl
+}
+
+h3 {
+  @apply text-xl
+}
+
+p {
+  @apply text-lg
+}

@@ -14,7 +14,7 @@ export default function Card({ label, description }: Props) {
       <div className={cn("border-t-2" , label === "Beyond Design" ? "border-b-2 pb-4": "")}>
         <ArrowUpRight strokeWidth={0.3} className='ml-auto size-16' />
         <div className='flex items-end'>
-          <h2 className='w-[50%] md:w-[20%]  uppercase text-lg'>{label}</h2>
+          <h3 className='w-[50%] md:w-[20%]  uppercase text-lg'>{label}</h3>
           <p className='flex-1'>{description}</p>
         </div>
       </div>

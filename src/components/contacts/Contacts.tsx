@@ -12,7 +12,7 @@ export default function Contacts() {
                     </div>
                 ))}
             </div>
-            <h2 className='text-xl mt-3 text-muted-foreground font-Manrope lg:text-right'>hello@saifulalom.com</h2>
+            <h3 className='text-xl mt-3 text-muted-foreground font-Manrope lg:text-right'>hello@saifulalom.com</h3>
             <h1 className='font-AnastasiaScript mt-5 text-right'> <sup>“</sup> Expensive is not always overpriced.</h1>
             <h2 className='text-2xl font-AnastasiaScript'> -- Saiful Alom</h2>
         </div>

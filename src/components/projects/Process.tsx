@@ -8,9 +8,9 @@ export default function Process() {
             <div className='grid grid-cols-1 mt-5 gap-3 lg:grid-cols-6'>
                 {myProcess.map(({ id, title, description }) => (
                     <div className='p-2 text-muted-foreground  border border-muted-foreground' key={id}>
-                        <h2 className='text-4xl'>/{id}</h2>
-                        <h2 className='text-xl mt-1'>{title}</h2>
-                        <p className='mt-5 text-sm'>{description}</p>
+                        <h2 className='text-4x'>/{id}</h2>
+                        <h3 className='text-xl mt-1'>{title}</h3>
+                        <p className='mt-5'>{description}</p>
                     </div>
                 ))}
             </div>
