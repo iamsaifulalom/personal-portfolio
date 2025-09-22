@@ -8,7 +8,7 @@ export default function Header() {
             <h2 className={styles.site_title}>Saiful Alom</h2>
             <div className={styles.nav}>
                 {navLinks.map(({name , href}) => (
-                   <Link className={styles.nav_item} href={href}>{name}</Link>
+                   <Link key={name} className={styles.nav_item} href={href}>{name}</Link>
                 ))}
             </div>
             <div className={styles.site_title}>Dark <br /> Light</div>
