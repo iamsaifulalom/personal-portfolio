@@ -1,0 +1,28 @@
+:root {
+    --color-white: #f5f5f5;
+    --color-black: #121212;
+    --color-gray: #3d3d3d;
+    --color-light-gray: #a6a6a6;
+    --text-xs: 12px;
+    /* For smallest labels (e.g., social icons) */
+    --text-sm: 13px;
+    /* For durations and secondary info */
+    --text-base: 14px;
+    /* For body text, article descriptions */
+    --text-md: 15px;
+    /* Slightly emphasized body text */
+    --text-lg: 16px;
+    /* Button text, article titles */
+    --text-xl: 18px;
+    /* Medium-large title (not in current view) */
+    --text-2xl: 24px;
+    /* Bold subheadings, titles */
+    --text-3xl: 28px;
+    /* Section headings like "Work", "Articles" */
+    --text-4xl: 32px;
+    /* Main headline like "Full-stack Developer" */
+    --text-5xl: 36px;
+    /* Extra large heading (optional, max used) */
+    --text-6xl: 48px;
+    /* Hero headline “Full–stack Developer” */
+}
