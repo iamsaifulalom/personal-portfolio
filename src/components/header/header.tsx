@@ -7,11 +7,15 @@ export default function Header() {
         <header className={styles.header}>
             <h2 className={styles.site_title}>Saiful Alom</h2>
             <div className={styles.nav}>
-                {navLinks.map(({name , href}) => (
-                   <Link key={name} className={styles.nav_item} href={href}>{name}</Link>
+                {navLinks.map(({ name, href }) => (
+                    <Link key={name} className={styles.nav_item} href={href}>{name}</Link>
                 ))}
             </div>
-            <div className={styles.site_title}>Dark <br /> Light</div>
+            <div className={styles.theme_changer}>
+                <span>Dark</span>
+                <span>Light</span>
+                <div className={styles.header_right_circle}></div>
+            </div>
         </header>
     )
 }

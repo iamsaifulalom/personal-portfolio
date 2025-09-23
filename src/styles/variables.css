@@ -1,6 +1,6 @@
 :root {
-    --color-white: #f5f5f5;
-    --color-black: #121212;
+    --color-foregroud: #f5f5f5;
+    --color-backgroud: #121212;
     --color-gray: #3d3d3d;
     --color-light-gray: #a6a6a6;
     --text-xs: 12px;
@@ -25,4 +25,14 @@
     /* Extra large heading (optional, max used) */
     --text-6xl: 48px;
     /* Hero headline “Full–stack Developer” */
+}
+
+html.light {
+    --color-foregroud: #121212;
+    /* Dark text */
+    --color-backgroud: #ffffff;
+    /* Light background */
+    --color-gray: #6b6b6b;
+    /* Medium gray for muted text */
+    --color-light-gray: #d3d3d3;
 }

@@ -1,7 +1,7 @@
 
 body{
-  background: var(--color-black);
-  color: var(--color-white);
+  background: var(--color-backgroud);
+  color: var(--color-foregroud);
 }
 
 .hero-title {
