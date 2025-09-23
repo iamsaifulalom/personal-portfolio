@@ -1,21 +1,18 @@
 import { navLinks } from '@/constants/navigationLinks';
-import styles from './header.module.css';
 import Link from 'next/link';
+import ToggleTheme from './ToggleTheme';
 
 export default function Header() {
+
     return (
-        <header className={styles.header}>
-            <h2 className={styles.site_title}>Saiful Alom</h2>
-            <div className={styles.nav}>
+        <header className="flex text-xl  p-5 justify-between items-center font-fira-code">
+            <h2 >Saiful Alom</h2>
+            <div className="flex gap-8 text-lg">
                 {navLinks.map(({ name, href }) => (
-                    <Link key={name} className={styles.nav_item} href={href}>{name}</Link>
+                    <Link key={name} className="" href={href}>{name}</Link>
                 ))}
             </div>
-            <div className={styles.theme_changer}>
-                <span>Dark</span>
-                <span>Light</span>
-                <div className={styles.header_right_circle}></div>
-            </div>
+            <ToggleTheme />
         </header>
     )
 }
