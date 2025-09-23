@@ -4,14 +4,14 @@
   font-family: "open-sans";
   src: url("/fonts/open-sans.woff2") format("woff2");
   font-display: block;
-  font-weight: 300 600;
+  font-weight: normal;
 }
 
 @font-face {
   font-family: "fira-code";
   src: url("/fonts/fira-code.woff2") format("woff2");
   font-display: block;
-  font-weight: 300 600;
+  font-weight: normal;
 }
 
 :root {

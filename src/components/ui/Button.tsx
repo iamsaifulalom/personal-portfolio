@@ -1,15 +1,17 @@
-import styles from './button.module.css';
+
 
 type ButtonProps = {
     label: string,
     onClick?: () => void,
-    className?: string
+    className?: string,
 }
 
-export default function Button({ label, onClick , className}: ButtonProps) {
+export default function Button({ label, onClick, className = "py-5 px-28" }: ButtonProps) {
     return (
-        <button onClick={onClick} className={className}>
-            <span className={styles.text}>{label}</span>
+        <button onClick={onClick}
+            className={`bg-foreground   text-sm  rounded-full font-open-sans italic cursor-pointer ${className}`}
+        >
+            <span className="text-background">{label}</span>
         </button>
     )
 }
