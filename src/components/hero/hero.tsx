@@ -30,7 +30,7 @@ export default function Hero() {
 
       <div className='flex flex-wrap gap-3 mt-8'>
         {socialsLinks.map(({ href, Icon, label }) => (
-          <Link href={href} className='flex gap-2 border border-gray rounded-full px-3 py-2'>
+          <Link key={label} href={href} className='flex gap-2 border border-gray rounded-full px-3 py-2'>
             <Icon className='text-foreground' size={18} />
             <span className='text-sm text-light-gray'>{label}</span>
           </Link>

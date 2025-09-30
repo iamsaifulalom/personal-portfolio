@@ -1,5 +1,4 @@
 import { ChangeTheme } from '@/utils/changeTheme'
-import { Menu } from 'lucide-react';
 import React from 'react';
 import HeaderCircle from '../ui/HeaderCircle';
 import HamburgerMenu from '../ui/HamburgerMenu';
