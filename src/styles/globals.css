@@ -53,3 +53,7 @@ body {
   color: var(--color-foreground);
   overflow-x: hidden;
 }
+
+.hero-heading {
+  @apply text-3xl md:text-[70px] lg:text-9xl font-black font-fira-code
+}

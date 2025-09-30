@@ -1,11 +1,15 @@
 import { ChangeTheme } from '@/utils/changeTheme'
-import React from 'react'
+import { Menu } from 'lucide-react';
+import React from 'react';
+import HeaderCircle from '../ui/HeaderCircle';
+import HamburgerMenu from '../ui/HamburgerMenu';
 
 export default function ToggleTheme() {
     return (
         <div className="flex flex-col relative">
-            <span className="cursor-pointer" onClick={() => ChangeTheme("dark")}>Dark</span>
-            <span className="cursor-pointer" onClick={() => ChangeTheme("light")}>Light</span>
-            <div className="absolute border pointer-events-none border-light-gray size-50 rounded-full -top-20 -right-20"></div>
+            <HamburgerMenu/>
+            <span className="cursor-pointer lg:block hidden" onClick={() => ChangeTheme("dark")}>Dark</span>
+            <span className="cursor-pointer lg:block hidden" onClick={() => ChangeTheme("light")}>Light</span>
+            <HeaderCircle/>
         </div>)
 }
