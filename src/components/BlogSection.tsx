@@ -1,14 +1,14 @@
+import { blogs } from '@/constants/blog'
 import React from 'react'
+import Button from './ui/Button'
+import BlogCard from './ui/BlogCard'
 
 export default function BlogSection() {
   return (
-    <div className='mt-5 relative w-full aspect-'>
-      <div>
-        <h1>Title</h1>
-        <p>
-          description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, obcaecati quisquam eum eaque, minus temporibus numquam placeat, iste quasi sequi harum? Excepturi soluta esse assumenda vitae suscipit cumque blanditiis nihil?
-        </p>
-      </div>
+    <div className='mt-5 gap-3 overflow-x-scroll flex flex-row'>
+      {blogs.map((props) => (
+        <BlogCard {...props} key={props.title} />
+      ))}
     </div>
   )
 }

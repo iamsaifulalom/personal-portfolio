@@ -1,0 +1,1 @@
+docker run -it --rm -p 3000:3000 -w /app -v $(pwd):/app node:22-alpine /bin/sh

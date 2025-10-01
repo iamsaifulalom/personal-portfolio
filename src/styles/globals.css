@@ -58,3 +58,15 @@ body {
 .hero-heading {
   @apply text-3xl md:text-[70px] lg:text-9xl font-black font-fira-code
 }
+
+p{
+  font-family: var(--font-open-sans);
+  color: var(--color-light-gray);
+}
+
+p span{
+  font-family: var(--font-fira-code);
+  color: var(--color-foreground);
+  font-style: italic;
+  font-weight: bold;
+}
