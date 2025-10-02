@@ -1,9 +1,16 @@
+import Image from 'next/image';
 import Button from './Button';
 
 export default function BlogCard({ thumbnail, title, description }: BlogCardProps) {
   return (
     <div className='relative rounded-4xl w-[300px] shrink-0 overflow-hidden aspect-[1/1.2]'>
-      <img src={thumbnail} alt={title} className='w-full h-full object-cover' />
+      <Image
+      width={100}
+      height={100}
+        src={thumbnail}
+        alt={title}
+        className='w-full h-full object-cover'
+      />
       <div className='absolute bottom-0 p-4 left-0 bg-black/80'>
         <h1 className='line-clamp-2 font-fira-code text-xl'>{title}</h1>
         <p className='line-clamp-3 mt-3 font-open-sans text-sm'>{description}</p>

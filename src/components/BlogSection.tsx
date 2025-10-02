@@ -1,6 +1,4 @@
 import { blogs } from '@/constants/blog'
-import React from 'react'
-import Button from './ui/Button'
 import BlogCard from './ui/BlogCard'
 
 export default function BlogSection() {
