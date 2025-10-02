@@ -5,7 +5,7 @@ import ToggleTheme from './ui/ToggleTheme';
 export default function Header() {
 
     return (
-        <header className="flex max-w-7xl mx-auto relative text-xl w-full p-5 justify-between items-center font-fira-code">
+        <header className="flex max-w-[1440px] xl:p-10 mx-auto relative text-xl w-full p-5 justify-between items-center font-fira-code">
             <h2 >Saiful Alom</h2>
             <div className="hidden md:flex gap-4 text-lg">
                 {navLinks.map(({ name, href }) => (

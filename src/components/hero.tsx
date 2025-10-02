@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <>
-      <div className='flex items-center justify-between'>
+    <div className='p-4 lg:px-6 xl:px-10p'>
+      <div className='flex  items-center justify-between'>
         <h1 className='text-5xl font-fira-code md:text-7xl lg:text-8xl font-extrabold xl:text-9xl'>Full-stack</h1>
         <div className='hidden md:flex overflow-hidden gap-5'>
           <Button variant='heroLarge' label='Project' />
@@ -52,6 +52,6 @@ export default function Hero() {
           </Link>
         ))}
       </div>
-    </>
+    </div>
   )
 }
