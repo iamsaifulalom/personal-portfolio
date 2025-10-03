@@ -1,6 +1,9 @@
 import AboutMe from '@/components/AboutMe'
+import ArticleSection from '@/components/ArticleSection'
 import BlogSection from '@/components/BlogSection'
+import Contacts from '@/components/Contacts'
 import Hero from '@/components/hero'
+import Projects from '@/components/Projects'
 import Work from '@/components/Work'
 import React from 'react'
 
@@ -11,6 +14,9 @@ export default function Index() {
       <BlogSection />
       <AboutMe/>
       <Work/>
+      <Projects/>
+      <ArticleSection/>
+      <Contacts/>
     </div>
   )
 }

@@ -6,7 +6,7 @@ export default function Work() {
         <div className='mt-10'>
             <h1 className='hero-heading p-4 lg:px-6 xl:px-10 text-right'>Work</h1>
 
-            <div className='last:border-b border-white'>
+            <div className='last:border-b border-gray'>
                 {workExperience.map(({ company, yearStart, yearEnd, duration, roleAndTech }) => (
                     <div key={company} className='flex p-4 lg:px-6 xl:px-10 hover:bg-foreground transition-all hover:text-background border-t justify-between py-4 text-sm lg:text-lg border-gray'>
                         <div className='w-[130px] text-light-gray'>

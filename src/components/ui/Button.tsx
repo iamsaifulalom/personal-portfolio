@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 
-export default function Button({ label, onClick, variant = "large", children }: ButtonProps) {
+export default function Button({ label, onClick, variant = "large", children, ...props }: ButtonProps) {
 
     const variants = {
         large: "py-2 px-14",
@@ -10,12 +10,13 @@ export default function Button({ label, onClick, variant = "large", children }: 
     }
     return (
         <button
+            {...props}
             onClick={onClick}
             className={`bg-foreground text-sm rounded-full font-open-sans italic cursor-pointer ${variants[variant]}`}
         >
             {children}
             {label &&
-                <span className="text-background lg:text-2xl text-md">{label}</span>
+                <span className="text-background text-md">{label}</span>
             }
         </button>
     )
