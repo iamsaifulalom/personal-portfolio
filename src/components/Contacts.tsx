@@ -8,7 +8,7 @@ export default function Contacts() {
         <>
             <div className='mt-10 p-4 lg:px-6 xl:px-10'>
                 <h1 className='text-lg font-fira-code font-bold'>.../Contacts...</h1>
-                <div className='flex flex-col md:flex-row'>
+                <div className='flex flex-col gap-10 mt-10 md:flex-row'>
                    <ContactForm/>
                     <div className='flex-1'>
                         <h1 className='hero-heading'>Saiful</h1>

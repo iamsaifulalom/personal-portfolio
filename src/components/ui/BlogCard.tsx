@@ -5,8 +5,8 @@ export default function BlogCard({ thumbnail, title, description }: BlogCardProp
   return (
     <div className='relative rounded-4xl w-[300px] shrink-0 overflow-hidden aspect-[1/1.2]'>
       <Image
-      width={100}
-      height={100}
+        width={100}
+        height={100}
         src={thumbnail}
         alt={title}
         className='w-full h-full object-cover'
@@ -15,7 +15,9 @@ export default function BlogCard({ thumbnail, title, description }: BlogCardProp
         <h1 className='line-clamp-2 font-fira-code text-xl'>{title}</h1>
         <p className='line-clamp-3 mt-3 font-open-sans text-sm'>{description}</p>
         <div className='flex gap-3 mt-5'>
-          <Button label='Read more' />
+          <Button>
+            Read more
+          </Button>
           <Button variant='small'>
             <svg
               width="16"

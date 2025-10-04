@@ -9,7 +9,7 @@ export default function ArticleSection() {
 
             <h1 className='hero-heading p-4 lg:px-6 xl:px-10 border-b border-gray pb-2 text-right'>Article</h1>
             <div className='flex flex-col mt-8  md:flex-row'>
-              <Paginator/>
+                <Paginator />
                 {/* blog sections */}
                 <div className='grid grid-cols-1 md:order-2 md:grid-cols-2 gap-4'>
 
@@ -18,7 +18,9 @@ export default function ArticleSection() {
                             <h1 className='line-clamp-2  font-fira-code text-xl'>{title}</h1>
                             <p className='line-clamp-3 mt-3 font-open-sans text-sm'>{description}</p>
                             <div className='flex gap-3 mt-5'>
-                                <Button label='Read more' />
+                                <Button >
+                                    Read more
+                                </Button>
                                 <Button variant='small'>
                                     <svg
                                         width="16"
