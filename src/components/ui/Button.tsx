@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 
-export default function Button({ label, onClick, variant = "large", children, className, ...props }: ButtonProps) {
+export default function Button({ onClick, variant = "large", children, className, ...props }: ButtonProps) {
 
     const variants = {
         large: "py-2 px-14",
@@ -21,7 +21,6 @@ export default function Button({ label, onClick, variant = "large", children, cl
 
 
 type ButtonProps = {
-    label?: string,
     onClick?: () => void,
     className?: string,
     variant?: "large" | "small" | "heroSmall" | "heroLarge",

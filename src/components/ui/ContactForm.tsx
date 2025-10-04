@@ -2,7 +2,6 @@ import TextArea from './TextArea'
 import Input from './Input'
 import Button from './Button'
 import { Send } from 'lucide-react'
-import { ChangeEvent, useState } from 'react'
 import useSendMessage from '@/hooks/useSendMessaage'
 
 export default function ContactForm() {
